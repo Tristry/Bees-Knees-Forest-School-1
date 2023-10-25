@@ -19,7 +19,7 @@
 	id="about"
 	class="container pt-4 overflow-hidden h-[calc(100vh-350px)] max-h-[calc(100vh-200px)] max-md:h-full max-md:max-h-none"
 >
-	<div class="flex  max-md:gap-6 h-full max-md:flex-col">
+	<div class="flex  gap-6 h-full max-md:flex-col">
 		<div class="w-3/5 max-md:w-full h-full flex flex-col gap-5">
 			<div class="">
 				<h1 class="max-md:leading-[35px] max-md:text-2xl text-3xl leading-[50px] text-primary">
