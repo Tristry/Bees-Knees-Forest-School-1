@@ -16,19 +16,24 @@
 			</a>
 			<li class="md:hidden ml-auto">
 				<button on:click={() => (mobileMenuShow = !mobileMenuShow)}>
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 12 12" enable-background="new 0 0 12 12" version="1.1" xml:space="preserve">
-
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						width="25"
+						height="22"
+						viewBox="0 0 12 12"
+						enable-background="new 0 0 12 12"
+						version="1.1"
+						xml:space="preserve"
+					>
 						<g>
-						
-						<rect fill="#1D1D1B" height="1" width="11" x="0.5" y="5.5"/>
-						
-						<rect fill="#1D1D1B" height="1" width="11" x="0.5" y="2.5"/>
-						
-						<rect fill="#1D1D1B" height="1" width="11" x="0.5" y="8.5"/>
-						
+							<rect fill="#1D1D1B" height="1" width="11" x="0.5" y="5.5" />
+
+							<rect fill="#1D1D1B" height="1" width="11" x="0.5" y="2.5" />
+
+							<rect fill="#1D1D1B" height="1" width="11" x="0.5" y="8.5" />
 						</g>
-						
-						</svg>
+					</svg>
 				</button>
 			</li>
 			<div class="flex items-center ml-auto max-md:hidden">
@@ -141,7 +146,9 @@
 						</div>
 					</div>
 				</li>
-				<Button>Join a club</Button>
+				<a href="/clubs">
+					<Button>Join a club</Button>
+				</a>
 			</div>
 			<div
 				class="md:hidden w-full h-[calc(100vh-64px)] container bg-white top-16 absolute transition-all"
