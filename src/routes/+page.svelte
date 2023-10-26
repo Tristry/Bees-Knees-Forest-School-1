@@ -2,6 +2,7 @@
 	import Button from '$lib/components/Button.svelte';
 	import FeaturesCard from '$lib/components/FeaturesCard.svelte';
 	import Accordian from '$lib/components/Accordian.svelte';
+	import { FAQ } from '../data/faq';
 	const features = [
 		{
 			name: 'Risk Assessment',
@@ -59,7 +60,7 @@
 				'Our approach emphasises learning through play, which helps children engage with their environment in a fun and meaningful way, promoting a positive attitude toward learning in all stages of life',
 			image:
 				'https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&'
-		},
+		}
 	];
 </script>
 
@@ -74,14 +75,16 @@
 	</div>
 	<div class="w-full h-full flex items-center absolute top-0 text-white z-10">
 		<div class="container ml-auto flex flex-col gap-7">
-			<h1 class="max-md:text-3xl text-5xl leading-[50px] -mb-3">The best after school club for your kids</h1>
-			<p class="max-md:w-full w-3/5 leading-7 opacity-90">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eaque inventore veniam
-				minus dicta corrupti rerum nihil! Voluptas tempora similique odit! Reprehenderit ipsam
-				doloribus sapiente, facere ipsum magni perferendis nostrum!
+			<h1 class="max-md:text-3xl text-5xl leading-[50px] -mb-3 text-center">
+				Rooted in Fun, Growing in Nature
+			</h1>
+			<p class="max-md:w-full w-3/5 leading-7 opacity-90 text-center mx-auto">
+				The Bee's Knees Forest School - providing immersive outdoor learning experiences that
+				empower children to discover, explore, and learn in the heart of nature, fostering
+				creativity, resilience, and a lifelong love for the environment.
 			</p>
 			<div>
-				<Button classname="flex items-center " variant="WHITE"
+				<Button classname="flex items-center mx-auto" variant="WHITE"
 					><svg
 						width="30"
 						height="30"
@@ -101,18 +104,22 @@
 	</div>
 </section>
 <section class="container h-full">
-	<h2 class="max-md:text-2xl max-md:leading-[35px] text-3xl leading-[50px] text-primary my-6">Why our clubs are the bee's knees</h2>
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-full gap-5 ">
+	<h2 class="max-md:text-2xl max-md:leading-[35px] text-3xl leading-[50px] text-primary my-6 text-center">
+		Why our clubs are the bee's knees
+	</h2>
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-full gap-5">
 		{#each features as feature}
 			<FeaturesCard title={feature.name} description={feature.description} image={feature.image} />
 		{/each}
 	</div>
 </section>
 <section id="faq" class="container h-full">
-	<h2 class="max-md:text-2xl max-md:leading-[35px] text-3xl leading-[50px] text-primary my-6">Frequently Asked Questions</h2>
+	<h2 class="max-md:text-2xl max-md:leading-[35px] text-3xl leading-[50px] text-primary my-6 text-center">
+		Frequently Asked Questions
+	</h2>
 	<div class="grid grid-cols-2 max-md:grid-cols-1 h-full gap-5">
-		{#each features as feature}
-			<Accordian title={feature.name} content={feature.description} />
+		{#each FAQ as faq}
+			<Accordian title={faq.question} content={faq.answer} />
 		{/each}
 	</div>
 </section>

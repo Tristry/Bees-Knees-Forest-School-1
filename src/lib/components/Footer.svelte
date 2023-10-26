@@ -1,4 +1,4 @@
-<footer class="w-full bg-primary mt-10">
+<footer class="w-full bg-[#022000] mt-10">
     <div class="py-20 max-md:py-10 max-md:flex-col container flex">
         <div class="flex gap-2 text-white items-center max-md:mb-10">
             <img src="/logo.svg" width={60} alt="" class="max-md:w-[50px] invert-1 contrast-[1.5] brightness-[6.5]" />

@@ -4,7 +4,7 @@
 	export let description = '';
 </script>
 
-<div class="w-full h-[500px] max-md:h-full rounded-lg relative group overflow-hidden bg-[#ECEAE9]">
+<div class="w-full h-[500px] max-md:h-full rounded-lg relative group overflow-hidden bg-[#ECEAE9] text-center">
 	<div
 		class="w-full h-full rounded-lg overflow-hidden md:group-hover:h-1/2 max-md:h-[250px] transition-all duration-500"
 	>

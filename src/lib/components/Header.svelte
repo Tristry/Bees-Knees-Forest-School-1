@@ -38,7 +38,7 @@
 			</li>
 			<div class="flex items-center ml-auto max-md:hidden">
 				<li
-					class="relative ml-auto mr-5 text-[14px] flex items-center gap-2 font-medium cursor-pointer group"
+					class="relative ml-auto mr-5 text-[14px] flex items-center gap-2 font-semibold cursor-pointer group"
 				>
 					Who we are
 					<svg
@@ -71,7 +71,7 @@
 					</div>
 				</li>
 				<li
-					class="relative ml-auto mr-5 text-[14px] flex items-center gap-2 font-medium cursor-pointer group"
+					class="relative ml-auto mr-5 text-[14px] flex items-center gap-2 font-semibold cursor-pointer group"
 				>
 					<a href="/about">After school clubs</a>
 					<svg
@@ -109,7 +109,7 @@
 					</div>
 				</li>
 				<li
-					class="relative ml-auto mr-5 text-[14px] flex items-center gap-2 font-medium cursor-pointer group"
+					class="relative ml-auto mr-5 text-[14px] flex items-center gap-2 font-semibold cursor-pointer group"
 				>
 					Why Forest School
 					<svg
@@ -146,8 +146,13 @@
 						</div>
 					</div>
 				</li>
+				<li
+					class="relative ml-auto mr-5 text-[14px] flex items-center gap-2 font-semibold cursor-pointer group"
+				>
+					<a href="/contact">Contact Us</a>
+				</li>
 				<a href="/clubs">
-					<Button>Join a club</Button>
+					<Button classname="font-semibold">Join a club</Button>
 				</a>
 			</div>
 			<div
@@ -156,7 +161,7 @@
 			>
 				<div class="flex flex-col">
 					<li
-						class="relative mr-5 text-[18px] items-center gap-2 font-medium cursor-pointer group py-5 border-b justify-between"
+						class="relative mr-5 text-[18px] items-center gap-2 font-semibold cursor-pointer group py-5 border-b justify-between"
 					>
 						Who we are
 						<div class="flex flex-col mt-3 justify-center">
@@ -173,7 +178,7 @@
 						</div>
 					</li>
 					<li
-						class="relative mr-5 text-[18px] items-center gap-2 font-medium cursor-pointer group py-5 border-b justify-between"
+						class="relative mr-5 text-[18px] items-center gap-2 font-semibold cursor-pointer group py-5 border-b justify-between"
 					>
 						After School Clubs
 						<div class="flex flex-col mt-3 justify-center">
@@ -195,7 +200,7 @@
 						</div>
 					</li>
 					<li
-						class="relative mr-5 text-[18px] items-center gap-2 font-medium cursor-pointer group py-5 border-b justify-between"
+						class="relative mr-5 text-[18px] items-center gap-2 font-semibold cursor-pointer group py-5 border-b justify-between"
 					>
 						Why Forest School
 						<div class="flex flex-col mt-3 justify-center">
@@ -216,7 +221,18 @@
 							>
 						</div>
 					</li>
-					<Button>Join a club</Button>
+					<li
+						class="relative text-[18px] items-center gap-2 font-semibold cursor-pointer group py-5 border-b justify-between"
+					>
+						<a
+							on:click={() => (mobileMenuShow = !mobileMenuShow)}
+							class="pb-2 hover:border-black"
+							href="/contact"
+						>
+							Contact Us
+						</a>
+					</li>
+					<Button classname="!font-semibold">Join a club</Button>
 				</div>
 			</div>
 		</ul>
