@@ -10,7 +10,7 @@
 			description:
 				'We encourage kids to make their own risk assessments with minimal adult interference which allows children the space and time to develop natural problem solving skills. We foster a sense of responsibility and judgement that can benefit them in various aspects of life.',
 			image:
-				'https://cdn.midjourney.com/03051224-2eac-4bef-8a63-49120a08d35b/0_0.webp'
+				'https://cdn.midjourney.com/3acad77c-0d08-41c0-be4c-df59ee102322/0_1.webp'
 		},
 		{
 			name: 'Curiosity and Learning',
