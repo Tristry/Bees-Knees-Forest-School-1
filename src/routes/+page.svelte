@@ -3,6 +3,7 @@
 	import FeaturesCard from '$lib/components/FeaturesCard.svelte';
 	import Accordian from '$lib/components/Accordian.svelte';
 	import { FAQ } from '../data/faq';
+	import Input from '$lib/components/ui/Input/Input.svelte';
 	const features = [
 		{
 			name: 'Risk Assessment',
@@ -16,21 +17,21 @@
 			description:
 				'By nurturing curiosity, our clubs help children become curious learners for life, promoting a thirst for knowledge that goes beyond the classroom.',
 			image:
-				'https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&'
+				'https://cdn.midjourney.com/1334ccf7-2026-49de-b0ec-57612c47a4de/0_1.webp'
 		},
 		{
 			name: 'Physical Development',
 			description:
 				'Our clubs support the development of stronger physical abilities in children through outdoor activities, promoting health and well-being.',
 			image:
-				'https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&'
+				'https://cdn.midjourney.com/1259a882-c70c-444d-91e0-413fac57073e/0_3.webp'
 		},
 		{
 			name: 'Emotional Resilience',
 			description:
 				'The outdoor setting allows children to develop emotional resilience by navigating the challenges and uncertainties of the natural world, helping them build inner strength.',
 			image:
-				'https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&'
+				'https://cdn.midjourney.com/eac06a5c-62f8-446f-845a-6556c820ede0/0_0.webp'
 		},
 
 		{
@@ -38,28 +39,28 @@
 			description:
 				'Children attending our clubs become more effective communicators as they learn to express themselves in a diverse and interactive outdoor environment, improving their social skills.',
 			image:
-				'https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&'
+				'https://cdn.midjourney.com/dd1f6e4f-e47e-4088-88f5-27fa7c272aa5/0_2.webp'
 		},
 		{
 			name: 'Self-Confidence',
 			description:
 				'Participation in our clubs can boost a childs self-confidence, as they conquer outdoor challenges and gain a sense of accomplishment.',
 			image:
-				'https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&'
+				'https://cdn.midjourney.com/cb9d7681-96a9-42d9-9543-a6b340313f53/0_1.webp'
 		},
 		{
 			name: 'Sensory Learning',
 			description:
 				'Our approach and clubs engage childrens senses - research has proven that information acquired through the use of all our senses leads to knowledge being ingrained rather than simply retained for a short period of time.',
 			image:
-				'https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&'
+				'https://cdn.midjourney.com/50793d7b-576d-4cb6-8f68-7b75f74c9c92/0_3.webp'
 		},
 		{
 			name: 'Learning Through Play',
 			description:
 				'Our approach emphasises learning through play, which helps children engage with their environment in a fun and meaningful way, promoting a positive attitude toward learning in all stages of life',
 			image:
-				'https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&'
+				'https://cdn.midjourney.com/345349a2-6062-4cbd-b285-966d80ead410/0_3.webp'
 		}
 	];
 </script>
@@ -104,7 +105,9 @@
 	</div>
 </section>
 <section class="container h-full">
-	<h2 class="max-md:text-2xl max-md:leading-[35px] text-3xl leading-[50px] text-primary my-6 text-center">
+	<h2
+		class="max-md:text-2xl max-md:leading-[35px] text-3xl leading-[50px] text-primary my-6 text-center"
+	>
 		Why our clubs are the bee's knees
 	</h2>
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-full gap-5">
@@ -114,12 +117,30 @@
 	</div>
 </section>
 <section id="faq" class="container h-full">
-	<h2 class="max-md:text-2xl max-md:leading-[35px] text-3xl leading-[50px] text-primary my-6 text-center">
+	<h2
+		class="max-md:text-2xl max-md:leading-[35px] text-3xl leading-[50px] text-primary my-6 text-center"
+	>
 		Frequently Asked Questions
 	</h2>
 	<div class="grid grid-cols-2 max-md:grid-cols-1 h-full gap-5">
 		{#each FAQ as faq}
 			<Accordian title={faq.question} content={faq.answer} />
 		{/each}
+	</div>
+</section>
+
+<section class="mt-10 container">
+	<div
+		class="bg-[#BFFFBA] flex flex-col border-4 border-[#054900] space-y justify-center w-full rounded-xl h-[300px] max-md:h-fit text-center space-y-2"
+	>
+		<div class="w-[70%] max-md:w-[100%] max-md:px-4 max-md:py-10 
+		mx-auto space-y-3">
+			<h2 class="max-md:text-2xl text-3xl text-[#054900]">Subscribe to <span style="background-color:#82ff79; padding:4px; border-radius:4px; color:#054900">Bee's Knees Forest School</span></h2>
+			<p class="max-md:text-sm opacity-80 leading-6">Join our newsletter and receive the latest news, tips, and exclusive offers directly in your inbox. Enter your email below and hit subscribe now! </p>
+			<div class="flex gap-4 max-md:flex-col max-md:gap-2">
+				<Input class="border-[#054900]" placeholder="Enter your email" />
+				<Button variant="PRIMARY">Subscribe</Button>
+			</div>
+		</div>
 	</div>
 </section>

@@ -22,7 +22,7 @@ export let CLUBS: Club[] = [
         title: "Bushcraft Adventures After-School Club",
         highlightedWord: "Bushcraft",
         description: "Calling all young adventurers and nature lovers! Get ready for a journey of a lifetime as we dive headfirst into the heart of the forest. \"Bushcraft Adventures\" isn't your average after-school club – it's a thrilling wilderness extravaganza that will transform you into a trailblazing explorer. Imagine building your own forest hideaways, mastering the art of orienteering, and cooking up mouthwatering campfire feasts. From tracking wildlife to navigating like a pro, this is where you'll discover the secrets of the wild, make lifelong friends, and ignite your love for nature like never before. Parents, prepare for your child to become a confident, capable, and wild-at-heart adventurer. Kids, get ready to uncover, create, and explore in the most exciting way possible. Enrol today, and let the forest fun begin!",
-        image: "https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&",
+        image: "https://cdn.midjourney.com/c8455164-ae28-480a-a5b4-67f573a803eb/0_2.webp",
         termHighlights: [
             {
                 title: "Shelter Building",
@@ -57,17 +57,18 @@ export let CLUBS: Club[] = [
                 description: "Encourage mindfulness and awareness of the environment. Students will engage in sensory activities, sit-spots, and nature journaling to connect deeply with the forest and its inhabitants.",
             }
         ],
-        primaryColor: "#054900",
-        secondaryColor: "#BFFFBA",
-        tertiaryColor: "#69FF93",
-        buttonColor: "#BFFFBA",
+        primaryColor: "#49190A",
+        secondaryColor: "#ff54224a",
+        tertiaryColor: "#FFA185",
+        buttonColor: "#ffd0c2",
+
     },
     {
         id: "nature-explorers",
         title: "Nature Explorers After-School Club",
         highlightedWord: "Nature Explorers",
         description: "Calling all young adventurers! Dive into the world of nature right within our school's outdoor sanctuary with \"Nature Explorers After-School Club.\" Designed for ages 8-12, this exciting program takes students on a journey of discovery, from unravelling the mysteries of climate change to nurturing eco-friendly practices in our outdoor space. With hands-on exploration, creative projects, mini eco-experiments, and outdoor adventures, your child will become an environmental champion, showcasing their eco-initiatives to the school community. Enrol today and let your child be part of an inspiring mission to connect with and protect our precious environment, right in our school's backyard!",
-        image: "https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&",
+        image: "https://cdn.midjourney.com/ad3d4b5c-911f-46a2-bbba-2af199871ded/0_1.webp",
         termHighlights: [
             {
                 title: "Environmental Exploration",
@@ -102,17 +103,17 @@ export let CLUBS: Club[] = [
                 description: "We'll make the most of our outdoor facilities with guided hikes, bird-watching, and other nature-related activities that foster a deep connection to the environment...",
             },
         ],
-        primaryColor: "#49190A",
-        secondaryColor: "#ff54224a",
-        tertiaryColor: "#FFA185",
-        buttonColor: "#ffd0c2",
+        primaryColor: "#054900",
+        secondaryColor: "#BFFFBA",
+        tertiaryColor: "#69FF93",
+        buttonColor: "#BFFFBA",
     },
     {
         id: "tools-tinkerers",
         title: "Tool Tinkerers After-School Club",
         highlightedWord: "Tool Tinkerers",
         description: "Get ready to ignite your child's inner builder and adventurer with the \"Tool Tinkerers After-School Club\"! Designed for budding creators aged 8-12, this electrifying program unfolds in the secure outdoor spaces of our school, offering a thrilling journey of discovery through hands-on tool exploration and outdoor crafting. From wielding hammers and saws to crafting birdhouses, sculpting natural art, and tackling mini construction challenges, your child will unleash their creativity and master essential life skills while having a blast. Safety, craftsmanship, and the wonders of nature converge in a dynamic outdoor classroom where every week is a new adventure. Join us and watch your child's imagination come to life in a world of tools, teamwork, and endless fun!",
-        image: "https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&",
+        image: "https://cdn.midjourney.com/98b51b36-2a6f-47c0-8e99-4640dfc9cb04/0_2.webp",
         termHighlights: [
             {
                 title: "Tool Introduction",
@@ -147,18 +148,17 @@ export let CLUBS: Club[] = [
                 description: "Throughout the term, students will also have time for exploration and appreciation of the natural world within our school grounds. They'll learn about local plants, insects, and wildlife, fostering a deeper connection to nature.",
             },
         ],
-        primaryColor: '#493800',
-        secondaryColor: '#fff9ba',
-        tertiaryColor: '#fff052',
-        buttonColor: '#fffbd7'
-
+        primaryColor: "#000000",
+        secondaryColor: "#E1E1E1",
+        tertiaryColor: "#cdcdcd",
+        buttonColor: "#FFFFFF",
     },
     {
         id: "nature-explorers-mini",
         title: "Nature Explorers Mini Club",
         highlightedWord: "Nature Explorers Mini",
-        description: "Calling all young adventurers aged 5-7 and their parents – get ready for a wild and wonderful journey into the great outdoors with our \"Nature Explorers Mini Club\"! Designed to spark curiosity and wonder, this thrilling program invites our littlest explorers to dive headfirst into the natural world right within the safe and nurturing embrace of our school's outdoor spaces. From exciting scavenger hunts and animal tracking to captivating outdoor storytime and hands-on nature art, your child will embark on a magical adventure of discovery, creativity, and outdoor play. Join us, and watch as your child's love for nature blossoms in a world of outdoor fun, picnics, and unforgettable celebrations!",
-        image: "https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&",
+        description: "Calling all young adventurers aged 5-7 and their parents - get ready for a wild and wonderful journey into the great outdoors with our \"Nature Explorers Mini Club\"! Designed to spark curiosity and wonder, this thrilling program invites our littlest explorers to dive headfirst into the natural world right within the safe and nurturing embrace of our school's outdoor spaces. From exciting scavenger hunts and animal tracking to captivating outdoor storytime and hands-on nature art, your child will embark on a magical adventure of discovery, creativity, and outdoor play. Join us, and watch as your child's love for nature blossoms in a world of outdoor fun, picnics, and unforgettable celebrations!",
+        image: "https://cdn.midjourney.com/51fc633b-61eb-4d2c-a8c8-0aa5708b21ac/0_2.webp",
         termHighlights: [
             {
                 title: "Nature Scavenger Hunts",
@@ -193,9 +193,9 @@ export let CLUBS: Club[] = [
                 description: "Embracing the great outdoors, we'll have picnics in our school's outdoor spaces. Children will enjoy simple, healthy snacks while connecting with nature and each other.",
             },
         ],
-        primaryColor: "#000000",
-        secondaryColor: "#E1E1E1",
-        tertiaryColor: "#ffffff",
-        buttonColor: "#FFFFFF",
+        primaryColor: '#493800',
+        secondaryColor: '#fff9ba',
+        tertiaryColor: '#fff052',
+        buttonColor: '#fffbd7'
     }
 ]
