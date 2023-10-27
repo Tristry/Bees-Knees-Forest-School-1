@@ -10,7 +10,7 @@
 			description:
 				'We encourage kids to make their own risk assessments with minimal adult interference which allows children the space and time to develop natural problem solving skills. We foster a sense of responsibility and judgement that can benefit them in various aspects of life.',
 			image:
-				'https://cdn.discordapp.com/attachments/1020025379840327741/1160136628048769034/anarkyyy_Adventurous_kids_showing_risk_assessment_skills_in_eng_e6aba248-cebd-4ada-9315-3086fa945e58.png?ex=653ccaee&is=652a55ee&hm=ef959e8b424f1b08be960235ef3cad1f109f9e8858afeaa22a9ecc5dd2e1651a&'
+				'https://cdn.midjourney.com/03051224-2eac-4bef-8a63-49120a08d35b/0_0.webp'
 		},
 		{
 			name: 'Curiosity and Learning',
