@@ -46,13 +46,13 @@
 			name: 'Sensory Learning',
 			description:
 				'Our approach and clubs engage childrens senses - research has proven that information acquired through the use of all our senses leads to knowledge being ingrained rather than simply retained for a short period of time.',
-			image: 'https://cdn.midjourney.com/345349a2-6062-4cbd-b285-966d80ead410/0_3.webp'
+			image: 'https://cdn.midjourney.com/a4b45a20-90fe-464f-9b5c-df39ece1faf6/0_3.webp'
 		},
 		{
 			name: 'Learning Through Play',
 			description:
 				'Our approach emphasises learning through play, which helps children engage with their environment in a fun and meaningful way, promoting a positive attitude toward learning in all stages of life',
-			image: 'https://cdn.midjourney.com/a4b45a20-90fe-464f-9b5c-df39ece1faf6/0_3.webp'
+			image: 'https://cdn.midjourney.com/50793d7b-576d-4cb6-8f68-7b75f74c9c92/0_3.webp'
 		}
 	];
 </script>
@@ -107,7 +107,7 @@
 			<FeaturesCard title={feature.name} description={feature.description} image={feature.image} />
 		{/each}
 	</div>
-	<div class="w-full mt-5 flex justify-center">
+	<div class="w-full mt-8 flex justify-center">
 		<a href="/clubs">
 			<Button variant="RED" classname="font-semibold">See Our Clubs</Button>
 		</a>
