@@ -28,7 +28,7 @@
 	</div>
 	<div class={`bg-[#ECEAE942] w-full transition-all ease-in-out duration-500 overflow-hidden px-4 ${expanded ? "max-h-[500px] py-2" : "max-h-0 py-0"}`}>
 		<p class="text-sm leading-6 text-[#442921]">
-			{content}
+			{@html content}
 		</p>
 	</div>
 </div>

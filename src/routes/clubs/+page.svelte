@@ -2,26 +2,13 @@
 	import { cn } from '$lib';
 	import { CLUBS } from '../../data/clubs';
 	import Button from '$lib/components/Button.svelte';
-
-	const getTitle = (title: string, highlightedWord: string, color: string) => {
-		const index = title.indexOf(highlightedWord);
-		const firstPart = title.substring(0, index);
-		const secondPart = title.substring(index + highlightedWord.length);
-		return (
-			firstPart +
-			`<span style="background-color:${color}; padding:4px; border-radius:4px;">` +
-			highlightedWord +
-			'</span>' +
-			secondPart
-		);
-	};
 </script>
 
 <section id="clubs" class="container overflow-hidden">
 	<div class="flex gap-10 h-full mt-3">
 		<div class="w-full">
 			<div class="">
-				<h1 class="max-md:text-2xl text-3xl leading-[50px] text-primary">Our Clubs</h1>
+				<h1 class="max-md:text-2xl text-3xl leading-[50px] text-[#CF572B] font-semibold text-center">Our Clubs</h1>
 				<p class="max-md:text-sm max-md:leading-6 mt-1 text-base text-muted-foreground leading-7">
 					Welcome to our enriching After-School Clubs, where young minds embark on exciting journeys
 					of exploration and discovery. Designed to spark curiosity and nurture a deep connection to
@@ -39,7 +26,7 @@
 	</div>
 </section>
 
-<section class="container mt-6 space-y-6">
+<section class="container mt-8 space-y-6">
 	{#each CLUBS as club, index}
 		<div
 			class={`w-full flex gap-4 max-md:flex-col-reverse h-auto  ${
@@ -55,15 +42,15 @@
 				>
 					<img src={club.image} alt="" class="w-full h-full object-cover" />
 				</div>
-				<div class="space-y-2">
+				<div>
 					<h1
-						class="max-md:text-2xl max-md:leading-[34px] text-2xl leading-[42px]"
+						class="max-md:text-2xl font-semibold max-md:leading-[34px] text-2xl leading-[42px] -mb-2"
 						style={`color: ${club.primaryColor};`}
 					>
-						{@html getTitle(club.title, club.highlightedWord, club.tertiaryColor)}
+						{club.title}
 					</h1>
 					<p
-						class="leading-7 opacity-90 max-md:text-sm max-md:leading-6 line-clamp-[12]"
+						class="leading-7 opacity-90 max-md:text-sm max-md:leading-6 line-clamp-[12] my-4"
 						style={`color: ${club.primaryColor};`}
 					>
 						{club.description}...
@@ -72,8 +59,8 @@
 						<a href={`/clubs/${club.id}`}>
 							<Button
 								classname="!mt-auto"
-								style={`background-color: ${club.primaryColor}; color: ${club.buttonColor}`}
-								>Read More</Button
+								style={`background-color: ${club.primaryColor}; color: ${club.secondaryColor}`}
+								>Join Now</Button
 							>
 						</a>
 					</div>

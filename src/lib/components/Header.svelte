@@ -152,7 +152,7 @@
 					<a href="/contact">Contact Us</a>
 				</li>
 				<a href="/clubs">
-					<Button classname="font-semibold">Join a club</Button>
+					<Button classname="font-semibold" variant="RED">Join a club</Button>
 				</a>
 			</div>
 			<div

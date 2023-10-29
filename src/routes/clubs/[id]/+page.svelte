@@ -14,14 +14,17 @@
 
 {#if club}
 	<section class="container pt-1">
-		<h1 class="text-3xl leading-[42px] max-md:text-2xl my-4" style={`color: ${club.primaryColor};`}>
+		<h1
+			class="text-3xl leading-[42px] font-semibold mt-3 mb-8 max-md:text-2xl text-center" 
+			style={`color: ${club.primaryColor};`}
+		>
 			{club?.title}
 		</h1>
 		<div class="w-full max-md:h-[200px] h-[400px] rounded-lg overflow-hidden">
-			<img class="w-full h-full object-cover" src={CLUBS[0].image} alt="" />
+			<img class="w-full h-full object-cover" src={club.image} alt="" />
 		</div>
-		<div class="flex justify-between max-md:flex-col">
-			<p class="mt-4 leading-7 w-3/5 max-md:w-full max-md:text-sm max-md:leading-6">
+		<div class="flex justify-between max-md:flex-col gap-10 mt-3">
+			<p class="mt-4 leading-7 w-4/5 max-md:w-full max-md:text-sm max-md:leading-6">
 				{club?.description}
 			</p>
 			<div
@@ -68,15 +71,22 @@
 						name="children"
 						placeholder="Number of children"
 						type="number"
+						min={1}
 					/>
 				</div>
-				<Button style={`background-color: ${club.primaryColor}; color:${club.buttonColor}; width:100%; margin-top:15px;`}>Checkout</Button>
+				<Button
+					style={`background-color: ${club.primaryColor}; color:${club.secondaryColor}; width:100%; margin-top:15px;`}
+					>Checkout</Button
+				>
 			</div>
 		</div>
 	</section>
 
-	<section class="container mt-8">
-		<h2 class="max-md:text-2xl text-3xl leading-[42px]" style={`color: ${club.primaryColor};`}>
+	<section class="container">
+		<h2
+			class="max-md:text-2xl my-8 mt-12 text-3xl leading-[42px] font-semibold text-center"
+			style={`color: ${club.primaryColor};`}
+		>
 			Term Highlights
 		</h2>
 		<ul>
@@ -96,5 +106,14 @@
 				</li>
 			{/each}
 		</ul>
+	</section>
+	<section class="container">
+		<h2
+			class="max-md:text-2xl  text-center my-8 text-3xl leading-[42px] font-semibold"
+			style={`color: ${club.primaryColor};`}
+		>
+			Term Finale
+		</h2>
+		<p class="leading-7 max-md:text-sm">{@html club.termFinale}</p>
 	</section>
 {/if}
